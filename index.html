@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +7,115 @@
     <title>Tur Nazar</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
     <style>
+        @font-face {
+            font-family: GraphikRegular;
+            src: url(fonts\ family/GraphikRegular.otf);
+        }
+        :root {
+            --title-font-family: "Graphik", sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
         .header {
-            background-image: url("img/Header backgrond.png");            
+            background-image: url("img/Header background.png");
+            background-size: cover;
+            height: 100vh;
+            margin-top: -5px;
+            margin-right: -5px;
+            margin-left: -5px;
+        }
+        .navbar {
+            margin: 4px 6px 134px 390px;
+            justify-content: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 100px;
+            word-spacing: 1em;
+        }
+        .text-nav {
+            color: white;
+            font-family: Graphik;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            display: inline-flex;
+            align-items: center;
+            gap: 21px;
+        }
+        .logo {
+            padding: 10px;
+            margin: 50px 60px 50px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .socials {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-left: 200px;
+        }
+        .title {
+            margin-top: -20px;
+            font-size: 74px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 84px;
+            letter-spacing: 0.2px;
+        }
+        .subtitle {
+            margin-top: -20px;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0.2px;
+        }
+        .textcontent {
+            font-family: var(--title-font-family);
+            text-align: center;
+            color: white;
+            font-weight: 400;
+        }
+        .button {
+            display: flex;
+            width: 236px;
+            padding: 16px 0px 16px 0px;            
+            flex-direction: column;
+            align-items: center;
+            border-radius: 35px;
+            background-color: #2091F9;
+            border: 0;
+            margin: 110px 400px 0px 848px;
         }
     </style>
 </head>
 <body>
     <section class="header">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <img src="img/Figma logo.png" alt="figma logo">
-        <div>
-            <ul>
-                <li><img src="img/twitter logo.png" alt="twitter logo"></li>
-                <li><img src="img/facebook logo.png" alt="facebook logo"></li>
-                <li><img src="img/linkedin logo.png" alt="linkedin logo"></li>
-            </ul>
+        <div class="navbar">
+            <nav>
+                <a href="#" class="text-nav">Home</a>
+                <a href="#" class="text-nav">Product</a>
+                <a href="#" class="text-nav">Pricing</a>
+                <a href="#" class="text-nav">About</a>
+                <a href="#" class="text-nav">Contact</a>
+            </nav>
+            <div class="logo">
+                <img src="img/Figma logo.png" alt="figma logo">
+            </div>
+            <div class="socials">
+                <a href="https://twitter.com/"><img src="img/twitter logo.png" alt="twitter logo"></a>
+                <a href="https://www.facebook.com/"><img src="img/facebook logo.png" alt="facebook logo"></a>
+                <a href="https://www.linkedin.com/"><img src="img/linkedin logo.png" alt="linkedin logo"></a>
+            </div>
         </div>
-        <h1 style="color: white;">The best products start with Figma</h1>
-        <p style="color: white;">Most calendars are designed for teams. Slate is designed for freelancers.</p>
-        <button type="button">Try For Free</button>
+        <div class="textcontent">
+            <h1 class="title">The best products<br> start with Figma</h1>
+            <p class="subtitle">Most calendars are designed for teams. Slate is designed<br> for freelancers.</p>
+        </div>
+        <button type="button" class="button" style="font-size:20px; color: white;">Try For Free</button>
     </section>
 </body>
 </html>
